@@ -1,9 +1,9 @@
 const express = require('express');
-const app = express();
 const http = require('http');
 const cors = require('cors');
 const { Server } = require('socket.io');
 
+const app = express();
 app.use(cors());
 app.get('/', (req, res) => res.json({ status: 'Online' }));
 
